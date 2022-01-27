@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,5 +21,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
+Route::get('/', [PostController::class, 'index'])->name('posts.index');
+Route::resource('posts', PostController::class)->except(['index']);
 
 require __DIR__.'/auth.php';

@@ -15,4 +15,14 @@ class Post extends Model
     protected $fillable = [
       'user_id', 'category_id', 'content', 'title'
     ];
+
+    public function category() {
+        // 投稿は1つのカテゴリーに属する
+        return $this->belongsTo(Category::class, 'category_id');
+    }
+
+    public function user() {
+        // 投稿は1つのカテゴリーに属する
+        return $this->belongsTo(User::class, 'user_id');
+    }
 }
