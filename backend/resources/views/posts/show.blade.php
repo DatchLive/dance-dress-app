@@ -9,13 +9,10 @@
       <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
           <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
               <div class="p-6 bg-white border-b border-gray-200">
-                @foreach($posts as $post)
-                <div>{{$post->title}}</div>
+                <div>詳細</div>
                 <div>カテゴリー名：{{$post->category->category_name}}</div>
                 <div>投稿者：{{$post->user->name}}</div>
                 <div>{{$post->content}}</div>
-                <span class="bg-cyan-600"><a href="{{ route('posts.show', $post->id)}}">ボタン</a></span>
-                @endforeach
               </div>
           </div>
       </div>
