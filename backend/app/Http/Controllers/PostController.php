@@ -26,7 +26,8 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        // $post->load('category', 'user');
+        return view('posts.create');
     }
 
     /**
