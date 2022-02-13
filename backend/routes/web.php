@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('dashboard');
 // })->middleware(['auth'])->name('dashboard');
 
-Route::get('dress', [DressController::class, 'index']);
-// Route::resource('posts', PostController::class)->except(['index']);
+Route::get('/', [DressController::class, 'index'])->name('dress.index');
+Route::get('/show/{d_id}', [DressController::class, 'show'])->name('dress.show');
 
 // require __DIR__.'/auth.php';

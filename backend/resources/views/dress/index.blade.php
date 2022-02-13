@@ -9,5 +9,6 @@
   <div class="px-6 pt-4 pb-2">
     <span class="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full">{{$dress->color}}</span>
   </div>
+  <p><a href="{{ route('dress.show', ['d_id'=>$dress->d_id])}}">詳細</a></p>
 </div>
 @endforeach

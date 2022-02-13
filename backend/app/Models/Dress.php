@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Dress extends Model
 {
-    //
+  protected $table = 'dresses';
+
+  protected $primaryKey = 'd_id';
 }
