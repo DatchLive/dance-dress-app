@@ -16,7 +16,7 @@ class DressController extends Controller
     {
         $dresses = Dress::all();
         // dd($dresses);
-        return view('dress.index', ['dresses' => $dresses]);
+        return view('dress.index', compact('dresses'));
     }
 
     /**
@@ -26,7 +26,7 @@ class DressController extends Controller
      */
     public function create()
     {
-        //
+        return view('dress.create');
     }
 
     /**

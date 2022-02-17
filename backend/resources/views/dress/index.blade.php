@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="mb-10 text-center">
-  <a href="" class="px-4 py-2 text-base font-bold text-white rounded bg-cyan-600 hover:bg-cyan-800">
+  <a href="{{ route('dress.create') }}" class="px-4 py-2 text-base font-bold text-white rounded bg-cyan-600 hover:bg-cyan-800">
     投稿する
   </a>
 </div>
