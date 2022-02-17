@@ -15,11 +15,13 @@
   <body class="font-sans antialiased">
     <div class="min-h-screen">
       <header>
-        <h1 class="py-4 pl-4 text-2xl text-slate-100 bg-cyan-600">
+        <h1 class="py-4 pl-4 mb-10 text-2xl text-slate-100 bg-cyan-600">
           Dress Connection
         </h1>
       </header>
+      <div class="mb-10">
       @yield('content')
+      </div>
       <footer class="text-center">
         Copyright © 2021 Dress Connection All rights reserved.
       </footer>
