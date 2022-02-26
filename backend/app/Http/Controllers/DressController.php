@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class DressController extends Controller
 {
+    public function __construct()
+    {
+        $this->dress = new Dress();
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -37,7 +42,8 @@ class DressController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $registerDress = $this->dress->InsertDress($request);
+        return redirect()->route('dress.index');
     }
 
     /**
