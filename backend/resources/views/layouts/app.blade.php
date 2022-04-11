@@ -14,10 +14,11 @@
   </head>
   <body class="font-sans antialiased">
     <div class="min-h-screen">
-      <header>
-        <h1 class="py-4 pl-4 mb-10 text-2xl text-slate-100 bg-cyan-600">
+      <header class="text-slate-100 bg-cyan-600 mb-8">
+        <h1 class="py-4 pl-4 text-4xl">
           Dress Connection
         </h1>
+        @include('layouts.navigation')
       </header>
       <div class="mb-10">
       @yield('content')
