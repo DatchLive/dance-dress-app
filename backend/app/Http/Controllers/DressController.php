@@ -1,11 +1,11 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace App\Http\Controllers;
 
 use App\Models\Dress;
 use Illuminate\Http\Request;
 
-class DressController extends Controller
+final class DressController extends Controller
 {
     public function __construct()
     {
@@ -37,7 +37,7 @@ class DressController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -49,7 +49,7 @@ class DressController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function show($d_id)
@@ -62,7 +62,7 @@ class DressController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -73,8 +73,8 @@ class DressController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param \Illuminate\Http\Request $request
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -85,7 +85,7 @@ class DressController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)

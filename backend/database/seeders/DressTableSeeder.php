@@ -1,11 +1,11 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class DressTableSeeder extends Seeder
+final class DressTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
