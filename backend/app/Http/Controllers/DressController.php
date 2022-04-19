@@ -55,7 +55,7 @@ class DressController extends Controller
     public function show($d_id)
     {
         $dresses = Dress::find($d_id);
-        
+
         return view('dress.show', compact('dresses'));
     }
 

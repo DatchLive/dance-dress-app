@@ -7,25 +7,24 @@ use Illuminate\Database\Eloquent\Model;
 
 class Dress extends Model
 {
-  protected $table = 'dresses';
+    protected $table = 'dresses';
 
-  protected $primaryKey = 'd_id';
+    protected $primaryKey = 'd_id';
 
-  protected $fillable = [
+    protected $fillable = [
     'name',
     'genre',
     'color',
   ];
 
-  public function InsertDress($request)
-  {
-
-    return $this->create(
-      [
+    public function InsertDress($request)
+    {
+        return $this->create(
+            [
         'name' => $request -> name,
         'genre' => $request -> genre,
         'color' => $request -> color,
       ]
-    );
-  }
+        );
+    }
 }
