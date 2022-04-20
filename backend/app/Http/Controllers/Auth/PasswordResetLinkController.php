@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+<?php
 
 namespace App\Http\Controllers\Auth;
 
@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Password;
 
-final class PasswordResetLinkController extends Controller
+class PasswordResetLinkController extends Controller
 {
     /**
      * Display the password reset link request view.
@@ -21,7 +21,7 @@ final class PasswordResetLinkController extends Controller
     /**
      * Handle an incoming password reset link request.
      *
-     * @param \Illuminate\Http\Request $request
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\RedirectResponse
      *
      * @throws \Illuminate\Validation\ValidationException
@@ -39,7 +39,7 @@ final class PasswordResetLinkController extends Controller
             $request->only('email')
         );
 
-        return $status === Password::RESET_LINK_SENT
+        return $status == Password::RESET_LINK_SENT
                     ? back()->with('status', __($status))
                     : back()->withInput($request->only('email'))
                             ->withErrors(['email' => __($status)]);

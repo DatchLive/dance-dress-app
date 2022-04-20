@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+<?php
 
 namespace App\Http\Controllers\Auth;
 
@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
 
-final class ConfirmablePasswordController extends Controller
+class ConfirmablePasswordController extends Controller
 {
     /**
      * Show the confirm password view.
@@ -23,7 +23,7 @@ final class ConfirmablePasswordController extends Controller
     /**
      * Confirm the user's password.
      *
-     * @param \Illuminate\Http\Request $request
+     * @param  \Illuminate\Http\Request  $request
      * @return mixed
      */
     public function store(Request $request)

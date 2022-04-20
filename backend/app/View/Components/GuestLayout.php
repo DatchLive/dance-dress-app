@@ -1,10 +1,10 @@
-<?php declare(strict_types=1);
+<?php
 
 namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-final class GuestLayout extends Component
+class GuestLayout extends Component
 {
     /**
      * Get the view / contents that represents the component.

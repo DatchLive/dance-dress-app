@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+<?php
 
 namespace Tests\Feature\Auth;
 
@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\URL;
 use Tests\TestCase;
 
-final class EmailVerificationTest extends TestCase
+class EmailVerificationTest extends TestCase
 {
     use RefreshDatabase;
 

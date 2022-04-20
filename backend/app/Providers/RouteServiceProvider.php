@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+<?php
 
 namespace App\Providers;
 
@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Facades\Route;
 
-final class RouteServiceProvider extends ServiceProvider
+class RouteServiceProvider extends ServiceProvider
 {
     /**
      * The path to the "home" route for your application.

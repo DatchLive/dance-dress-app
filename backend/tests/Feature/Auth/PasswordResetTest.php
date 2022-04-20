@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+<?php
 
 namespace Tests\Feature\Auth;
 
@@ -8,7 +8,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Notification;
 use Tests\TestCase;
 
-final class PasswordResetTest extends TestCase
+class PasswordResetTest extends TestCase
 {
     use RefreshDatabase;
 

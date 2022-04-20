@@ -1,11 +1,11 @@
-<?php declare(strict_types=1);
+<?php
 
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-final class UsersTableSeeder extends Seeder
+class UsersTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -19,5 +19,6 @@ final class UsersTableSeeder extends Seeder
             'email' => 'test@test.com',
             'password' => bcrypt('secret'),
         ]);
+        
     }
 }

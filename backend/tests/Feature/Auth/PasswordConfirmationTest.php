@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+<?php
 
 namespace Tests\Feature\Auth;
 
@@ -6,7 +6,7 @@ use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
-final class PasswordConfirmationTest extends TestCase
+class PasswordConfirmationTest extends TestCase
 {
     use RefreshDatabase;
 

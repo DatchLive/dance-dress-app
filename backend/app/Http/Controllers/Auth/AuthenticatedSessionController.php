@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+<?php
 
 namespace App\Http\Controllers\Auth;
 
@@ -8,7 +8,7 @@ use App\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-final class AuthenticatedSessionController extends Controller
+class AuthenticatedSessionController extends Controller
 {
     /**
      * Display the login view.
@@ -23,7 +23,7 @@ final class AuthenticatedSessionController extends Controller
     /**
      * Handle an incoming authentication request.
      *
-     * @param \App\Http\Requests\Auth\LoginRequest $request
+     * @param  \App\Http\Requests\Auth\LoginRequest  $request
      * @return \Illuminate\Http\RedirectResponse
      */
     public function store(LoginRequest $request)
@@ -38,7 +38,7 @@ final class AuthenticatedSessionController extends Controller
     /**
      * Destroy an authenticated session.
      *
-     * @param \Illuminate\Http\Request $request
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\RedirectResponse
      */
     public function destroy(Request $request)

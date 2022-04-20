@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+<?php
 
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\ConfirmablePasswordController;
